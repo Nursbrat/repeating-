@@ -1,0 +1,49 @@
+.twenty {
+    margin-top: 30px;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+     padding-top: 57px ;
+     padding-bottom: 57px ;
+
+  }
+
+  &__items {
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+   
+  }
+ 
+  &__top {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $orange;
+  }
+  &__middle {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+  }
+  &__bottom {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: $grey;
+  }
+}

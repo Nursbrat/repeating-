@@ -1,0 +1,52 @@
+.office {
+  &__content {
+    display: grid;
+    place-content: center;
+  }
+  &__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: $black;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: 66px;
+  }
+
+  &__item {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: #f7f7f7;
+    padding: 59px 90px 59px 90px;
+  }
+  &__title {
+    text-align: center;
+    margin-top: 150px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  &__img {
+    display: flex;
+    justify-self: center;
+  }
+}

@@ -1,0 +1,15 @@
+.square {
+  display: grid;
+  max-width: 1500px;
+  margin: 0 auto;
+  place-content: center;
+  &__items {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  &__img {
+    width: 380px;
+    height: 307px;
+  }
+}

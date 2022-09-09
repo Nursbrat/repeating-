@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100&family=Nanum+Gothic&family=Oswald:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100&family=Nanum+Gothic&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@200;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.answers__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin-top: 50px;
+}
+.answers__dropdown {
+  margin-top: 60px;
+  display: grid;
+  row-gap: 40px;
+}
+.answers__details {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.answers__question {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #F7654A;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.answers__caret {
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid white;
+  border-top: 7px solid white;
+  border-left: 8px solid #F7654A;
+  transition: 0.2px;
+  color: transparent;
+  cursor: pointer;
+}
+.answers__caret-rotate {
+  transform: rotate(270deg);
+}
+.answers__summary {
+  max-width: 730px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: grey;
+  display: none;
+}
+.answers__summary-open {
+  display: block;
+}
+
+.contacts {
+  margin-top: 100px;
+}
+.contacts__title {
+  margin-top: 100px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+.contacts__items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  margin-top: 60px;
+}
+.contacts__item:last-child {
+  margin-top: 12px;
+  color: #F7654A;
+}
+.contacts__text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.contacts__text-main:last-child {
+  color: #F7654A;
+}
+.contacts__item {
+  text-align: center;
+}
+.contacts__name {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #999999;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contacts__text-main {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.office__content {
+  display: grid;
+  place-content: center;
+}
+.office__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.office__items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  margin-top: 66px;
+}
+.office__item {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: #f7f7f7;
+  padding: 59px 90px 59px 90px;
+}
+.office__title {
+  text-align: center;
+  margin-top: 150px;
+}
+.office__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.office__img {
+  display: flex;
+  justify-self: center;
+}
+
+.partners {
+  background: #404149;
+  margin-top: 60px;
+}
+.partners__content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.partners__items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.partners__title {
+  text-align: center;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.projects__title {
+  margin-top: 100px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404149;
+}
+.projects__box {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.projects__text {
+  max-width: 350px;
+  margin-top: 20px;
+}
+.projects__rectangle {
+  background: #F7654A;
+  width: 60px;
+  height: 6px;
+}
+.projects__name {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+}
+.projects__des {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: grey;
+}
+
+.review {
+  margin-top: 100px;
+}
+.review__items {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+.review__title {
+  text-align: center;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.review__box {
+  background: #f7f7f7;
+  padding: 30px;
+}
+.review__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #999999;
+  width: 290px;
+  padding-top: 20px;
+}
+.review__author {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 30px;
+  text-align: center;
+}
+.review__span {
+  color: #F7654A;
+}
+
+.square {
+  display: grid;
+  max-width: 1500px;
+  margin: 0 auto;
+  place-content: center;
+}
+.square__items {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.square__img {
+  width: 380px;
+  height: 307px;
+}
+
+.twenty {
+  margin-top: 30px;
+}
+.twenty__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7f7;
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+.twenty__items {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+.twenty__top {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F7654A;
+}
+.twenty__middle {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.twenty__bottom {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: grey;
+}/*# sourceMappingURL=index.css.map */

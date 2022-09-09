@@ -1,0 +1,24 @@
+.partners {
+  background: #404149;
+  margin-top: 60px;
+  &__content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  &__title {
+    text-align: center;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: $white;
+  }
+}

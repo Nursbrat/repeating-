@@ -1,0 +1,47 @@
+.review {
+  margin-top: 100px;
+  &__items {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+  }
+  &__title {
+    text-align: center;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  &__box {
+    background: #f7f7f7;
+    padding: 30px;
+  }
+  &__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #999999;
+    width: 290px;
+    padding-top: 20px;
+  }
+  &__author {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 30px;
+    text-align: center;
+  }
+  &__span{
+    color: $orange;
+  }
+}

@@ -1,0 +1,62 @@
+.contacts {
+  margin-top: 100px;
+  &__title {
+    margin-top: 100px;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  &__item:last-child {
+    margin-top: 12px;
+    color: $orange;
+    
+  }
+  &__text{
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+  }
+  &__text-main:last-child{
+    color: $orange;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__name {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #999999;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__text-main {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+  }
+}
